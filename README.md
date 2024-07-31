@@ -1,1 +1,1 @@
-# Algoritmos de Escalonamento: SRTe RR
+# Algoritmos de Escalonamento: SRT e RR
