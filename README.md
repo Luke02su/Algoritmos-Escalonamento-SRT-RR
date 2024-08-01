@@ -19,51 +19,10 @@ A linguagem de programação escolhida para o desenvolvimento do presente projet
 
 ## Estrutura do código
 
-Para cada processo lido, deverá ser armazenado o nome, o tempo de chegada e tempo de execução realizada pela CPU. Para a leitura desses dados, utilizamos o tipo abstrato de dados 'struct'. Por meio dessa struct, que chamamos de 'Processo', será solicitado ao usuário a entrada dos dados necessários para os algoritmos RR e SRT, conforme ilustração da Figura 1.
+Na main do nosso programa de escalonamento, há um laço de repetição que sempre executa no mínimo uma vez. Nele há um switch em que é pedido uma entrada do usuário em relação a qual algoritmo de escalonamento será executado, puxando, dessa forma, o bloco de código em que há nessas funções, as quais são: srt() e void rr(), as quais, não possuem retorno.
+É possível a saída do programa de maneira não forçada, como quando um determinado escalonador é finalizado. Desse modo, o usuário poderá escolher finalizar o programa. E, se ele digitar alguma opção inválida dentre as disponpiveis, o laço se repetirá até alguma dentre as três opções seja escolhida, conforme é demonstrado na figura 1.
 
 ~~~c++
-struct Processo {
-    string nome; // Nome do processo
-    int tempoChegada; // Tempo de chegada do processo
-    int tempoExecucao; // Tempo de execução do processo
-    // Função para receber os detalhes do processo do usuário
-    void receberProcesso() {
-        cout << "\nNome do processo: ";
-        cin >> nome; // Lê o nome do processo
-        cout << "Tempo de chegada: ";
-        cin >> tempoChegada; // Lê o tempo de chegada do processo
-        cout << "Tempo de execução: ";
-        cin >> tempoExecucao; // Lê o tempo de execução do processo
-    }
-};
-~~~
-<p align="center", color='blue'>
-Figura 1
-</p>
-
-Para o armazenamento dos dados lidos em nosso programa, dentro da função void srt() e rr(), utilizamos o array chamado vector, que possui como tipo nosso TAD Processo, denominado lista. Dentro da função há um laço de repetição que pede ao usuário se ele deseja adicionar um processo. Caso a condição seja atendida, é criado um novo processo e inserido no final da lista, senão simplesmente sai do laço, conforme é demonstrado no código comentado na figura 3 logo abaixo. 
-Como a estrutura do bloco de código de void srt() é idêntico ao do void rr(), evitamos duplicá-lo no relatório por quesitos redundância e poluição visual.
-
-~~~c++
-// Função de escalonamento Shortest Remaining Time (SRT)
-void srt() { // void rr() funciona da mesma maneira
-    vector<Processo> lista; // Lista para armazenar os processos
-    int resp; // Variável para armazenar a resposta do usuário
-
-    // Loop para adicionar processos
-    while (true) {
-        cout << "\nVocê deseja adicionar um processo?\n";
-        cout << "1 - Sim\n2 - Não\n\n";
-        cout << "Escolha: ";
-        cin >> resp; // Lê a escolha do usuário
-        if (resp == 1) {
-            Processo p; // Cria um novo processo
-            p.receberProcesso(); // Recebe os detalhes do processo
-            lista.push_back(p); // Adiciona o processo à lista
-        } else if (resp == 2) {
-            break; // Sai do loop se o usuário não quiser adicionar mais processos
-        }
-    }
 int main() {
     setlocale(LC_ALL, "Portuguese"); // Configura a localidade para português para formatar a saída
 
@@ -99,6 +58,58 @@ int main() {
 
 <p align="center", color='blue'>
 Figura 1
+</p>
+
+Para cada processo lido, deverá ser armazenado o nome, o tempo de chegada e tempo de execução realizada pela CPU. Para a leitura desses dados, utilizamos o tipo abstrato de dados (TAD), conhecido como struct. Por meio dessa struct, que chamamos de Processo, será solicitado ao usuário a entrada dos dados necessários para os algoritmos RR e SRT, conforme a ilustração da Figura 2.
+Essa struct será implementada na bloco de código das funções void srt() e rr().
+
+~~~c++
+struct Processo {
+    string nome; // Nome do processo
+    int tempoChegada; // Tempo de chegada do processo
+    int tempoExecucao; // Tempo de execução do processo
+    // Função para receber os detalhes do processo do usuário
+    void receberProcesso() {
+        cout << "\nNome do processo: ";
+        cin >> nome; // Lê o nome do processo
+        cout << "Tempo de chegada: ";
+        cin >> tempoChegada; // Lê o tempo de chegada do processo
+        cout << "Tempo de execução: ";
+        cin >> tempoExecucao; // Lê o tempo de execução do processo
+    }
+};
+~~~
+<p align="center", color='blue'>
+Figura 2
+</p>
+
+Para o armazenamento dos dados lidos em nosso programa, dentro da função void srt() e rr(), utilizamos o array chamado vector, que possui como tipo nosso TAD Processo, denominado lista. Dentro da função há um laço de repetição que pede ao usuário se ele deseja adicionar um processo. Caso a condição seja atendida, é criado um novo processo e inserido no final da lista, senão simplesmente sai do laço, conforme é demonstrado no código da Figura 3.
+Como a estrutura do bloco de código da função void srt() é idêntico ao do void rr(), evitamos duplicá-lo no relatório por quesitos de redundância e poluição visual.
+
+~~~c++
+// Função de escalonamento Shortest Remaining Time (SRT)
+void srt() { // void rr() funciona da mesma maneira
+    vector<Processo> lista; // Lista para armazenar os processos
+    int resp; // Variável para armazenar a resposta do usuário
+
+    // Loop para adicionar processos
+    while (true) {
+        cout << "\nVocê deseja adicionar um processo?\n";
+        cout << "1 - Sim\n2 - Não\n\n";
+        cout << "Escolha: ";
+        cin >> resp; // Lê a escolha do usuário
+        if (resp == 1) {
+            Processo p; // Cria um novo processo
+            p.receberProcesso(); // Recebe os detalhes do processo
+            lista.push_back(p); // Adiciona o processo à lista
+        } else if (resp == 2) {
+            break; // Sai do loop se o usuário não quiser adicionar mais processos
+        }
+    }
+~~~
+
+<p align="center", color='blue'>
+Figura 3
 </p>
 
 Figura 2
