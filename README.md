@@ -37,9 +37,9 @@ struct Processo {
     }
 };
 ~~~
-<div allign="center">
-##### Figura 1
-</div>
+<p align="center">
+This text will be centered.
+</p>
 
 Para o armazenamento dos dados lidos em nosso programa, utilizamos o array chamado Vector que possui como tipo nossa TAD Processo e como nome de lista. Esse vector é chamado na main do programa, conforme apresentado na Figura 2.
 
