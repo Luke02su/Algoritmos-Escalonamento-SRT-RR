@@ -36,11 +36,10 @@ struct Processo {
         cin >> tempoExecucao; // Lê o tempo de execução do processo
     }
 };
-
-				Figura 1
 ~~~
 
-Figura 1
+##### Figura 1
+
 Para o armazenamento dos dados lidos em nosso programa, utilizamos o array chamado Vector que possui como tipo nossa TAD Processo e como nome de lista. Esse vector é chamado na main do programa, conforme apresentado na Figura 2.
 
 Figura 2
