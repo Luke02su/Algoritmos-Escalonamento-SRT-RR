@@ -19,7 +19,7 @@ struct Processo {
 };
 
 // Função para ordenar os processos
-bool ordenar(Processo a, Processo b) {
+bool ordenarSRT(Processo a, Processo b) {
     // Ordena os processos primeiro pelo tempo de chegada
     if (a.tempoChegada == b.tempoChegada) {
         // Se o tempo de chegada for o mesmo, ordena pelo tempo de execução
@@ -30,6 +30,13 @@ bool ordenar(Processo a, Processo b) {
         return a.tempoExecucao < b.tempoExecucao; // Ordena os processos pelo menor tempo de execução se os tempos de chegada forem iguais
     }
     return a.tempoChegada < b.tempoChegada; // Ordena os processos pelo menor tempo de chegada
+}
+
+bool ordenarRR(Processo a, Processo b){
+    if(a.tempoChegada == b.tempoChegada){
+        return a.nome < b.nome;
+    }
+    return a.tempoChegada < b.tempoChegada;
 }
 
 // Função de escalonamento Shortest Remaining Time (SRT)
@@ -53,7 +60,7 @@ void srt() {
     }
 
     // Ordena a lista de processos pelo tempo de chegada e outros critérios
-    sort(lista.begin(), lista.end(), ordenar);
+    sort(lista.begin(), lista.end(), ordenarSRT);
 
     int tempoAtual = 0; // Inicializa o tempo atual
 
@@ -110,7 +117,42 @@ void rr() {
             break; // Sai do loop se o usuário não quiser adicionar mais processos
         }
     }
-    
+
+    int quantum;
+    cout << "Digite o quantum de processamento:\n";
+    cin >> quantum;
+
+    sort(lista.begin(), lista.end(), ordenarRR);
+    queue<Processo>fila;
+    for(int i=0; i<lista.size(); i++){
+        fila.push(lista[i]);
+    }
+
+    int tempoAtual = 0;
+    while(!fila.empty()){
+        if(fila.front().tempoChegada <= tempoAtual){
+            if(quantum > fila.front().tempoExecucao){
+                int tempExec = fila.front().tempoExecucao;
+                for(int i=0; i<tempExec; i++){
+                    cout << "Processo " << fila.front().nome << ". Tempo: " << tempoAtual << ".\n";
+                    fila.front().tempoExecucao--;
+                    tempoAtual++;
+                }
+                fila.pop();
+
+            } else {
+                for(int i=0; i<quantum; i++){
+                    cout << "Processo " << fila.front().nome << ". Tempo: " << tempoAtual << ".\n";
+                    fila.front().tempoExecucao--;
+                    tempoAtual++;
+                }
+                fila.push(fila.front());
+                fila.pop();
+            }
+        } else {
+            tempoAtual++;
+        }
+    }
 }
 
 int main() {
