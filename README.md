@@ -37,7 +37,7 @@ struct Processo {
     }
 };
 
-									Figura 1
+				Figura 1
 ~~~
 
 Figura 1
