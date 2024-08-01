@@ -1,8 +1,17 @@
 # Relatório: Algoritmos de Escalonamento (SRT e RR)
 
-#### Integrantes: 
+##### Integrantes: 
 + Lucas Samuel Dias
 + Andreia
++ Nathália
+
+##### Curso: 
++ ADS - Análise e Desenvolvimento de Sistemas
+
+##### Professor: 
++ Gilerto Viana de Oliveira
+
+## Descrição do projeto
 
 O trabalho consiste em aplicar os algoritmos mostrados em sala, criando uma espécie de simulação de uso desses algoritmos. Para isso, os alunos deverão se organizar em grupos e atender os requisitos de execução e apresentação solicitados pelo professor.
 Os algoritmos a serem desenvolvidos irão simular os escalonadores Round-Robin e SRT, sendo que as entradas serão manuais no início do programa conforme orientação prévia.
