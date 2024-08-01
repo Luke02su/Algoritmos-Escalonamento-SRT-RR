@@ -13,14 +13,18 @@
   
 ## Descrição do projeto
 
+<p align="justify">
 O trabalho consiste em aplicar os algoritmos mostrados em sala, criando uma espécie de simulação de uso desses algoritmos. Para isso, os alunos deverão se organizar em grupos e atender os requisitos de execução e apresentação solicitados pelo professor.<br>
 Os algoritmos a serem desenvolvidos irão simular os escalonadores Round-Robin e SRT, sendo que as entradas serão manuais no início do programa conforme orientação prévia.
 A linguagem de programação escolhida para o desenvolvimento do presente projeto é C++.
+</p>
 
 ## Estrutura do código
 
+<p align="justify">
 Na main do nosso programa de escalonamento, há um laço de repetição que sempre executa no mínimo uma vez. Nele há um switch em que é pedido uma entrada do usuário em relação a qual algoritmo de escalonamento será executado, puxando, dessa forma, o bloco de código em que há nessas funções, as quais são: srt() e void rr(), as quais, não possuem retorno.
 É possível a saída do programa de maneira não forçada, como quando um determinado escalonador é finalizado. Desse modo, o usuário poderá escolher finalizar o programa. E, se ele digitar alguma opção inválida dentre as disponpiveis, o laço se repetirá até alguma dentre as três opções seja escolhida, conforme é demonstrado na figura 1.
+</p>
 
 ~~~c++
 int main() {
@@ -60,8 +64,10 @@ int main() {
 Figura 1
 </p>
 
+<p align="justify">
 Para cada processo lido, deverá ser armazenado o nome, o tempo de chegada e tempo de execução realizada pela CPU. Para a leitura desses dados, utilizamos o tipo abstrato de dados (TAD), conhecido como struct. Por meio dessa struct, que chamamos de Processo, será solicitado ao usuário a entrada dos dados necessários para os algoritmos RR e SRT, conforme a ilustração da Figura 2.<br>
 Essa struct será implementada na bloco de código das funções void srt() e rr().
+</p>
 
 ~~~c++
 struct Processo {
@@ -83,8 +89,10 @@ struct Processo {
 Figura 2
 </p>
 
-Para o armazenamento dos dados lidos em nosso programa, dentro da função void srt() e rr(), utilizamos o array chamado vector, que possui como tipo nosso TAD Processo, denominado lista. Dentro da função há um laço de repetição que pede ao usuário se ele deseja adicionar um processo. Caso a condição seja atendida, é criado um novo processo e inserido no final da lista, senão simplesmente sai do laço, conforme é demonstrado no código da Figura 3.
+<p align="justify">
+Para o armazenamento dos dados lidos em nosso programa, dentro da função void srt() e rr(), utilizamos o array chamado vector, que possui como tipo nosso TAD Processo, denominado lista. Dentro da função há um laço de repetição que pede ao usuário se ele deseja adicionar um processo. Caso a condição seja atendida, é criado um novo processo e inserido no final da lista, senão simplesmente sai do laço, conforme é demonstrado no código da Figura 3.<br>
 Como a estrutura do bloco de código da função void srt() é idêntico ao do void rr(), evitamos duplicá-lo no relatório por quesitos de redundância e poluição visual.
+</p>
 
 ~~~c++
 // Função de escalonamento Shortest Remaining Time (SRT)
