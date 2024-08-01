@@ -14,7 +14,7 @@
 ## Descrição do projeto
 
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O trabalho consiste em aplicar os algoritmos mostrados em sala, criando uma espécie de simulação de uso desses algoritmos. Para isso, os alunos deverão se organizar em grupos e atender os requisitos de execução e apresentação solicitados pelo professor.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O trabalho consiste em aplicar os algoritmos de escalonamento mostrados em sala de aula, criando uma espécie de simulação de uso destes algoritmos: SRT e RR (Round. Para isso, os alunos deverão se organizar em grupos e atender os requisitos de execução e apresentação solicitados pelo professor.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os algoritmos a serem desenvolvidos irão simular os escalonadores Round-Robin e SRT, sendo que as entradas serão manuais no início do programa conforme orientação prévia.
 A linguagem de programação escolhida para o desenvolvimento do presente projeto é C++.
 </p>
@@ -126,6 +126,9 @@ Figura 2
 
 Figura 3
 A função na main que executa a ordenação está descrita na Figura 4.
+
+
+Métodos
 
 Figura 4
 Após entradas e ordenação feitas, a simulação do algoritmo SRT executa, de acordo com a Figura 5:
