@@ -1,2 +1,28 @@
-[Uploading Estou compartilhando o arquivo 'SO - Relatório Final' com você.md…]()
-![OIP](https://github.com/user-attachments/assets/3074fede-3c0a-4c5f-870a-e4f2f2e57e6b)
+# Algoritmos de Escalonamento (SRT e RR)
+
+
+Descrição do projeto
+
+O trabalho consiste em aplicar os algoritmos mostrados em sala, criando uma espécie de simulação de uso desses algoritmos. Para isso, os alunos deverão se organizar em grupos e atender os requisitos de execução e apresentação solicitados pelo professor.
+Os algoritmos a serem desenvolvidos irão simular os escalonadores Round-Robin e SRT, sendo que as entradas serão manuais no início do programa conforme orientação prévia.
+A linguagem de programação escolhida para o desenvolvimento do presente projeto é C++.
+
+Algoritmo SRT
+
+Para cada processo lido, deverá ser armazenado o nome, o tempo de processamento pela CPU e o tempo de chegada do mesmo. Para a leitura desses dados, utilizamos o tipo abstrato de dados Struct. Através dessa Struct que chamamos de Processo, será solicitado ao usuário a entrada dos dados necessários para os algoritmos Round-Robin e SRT conforme ilustração da Figura 1.
+
+Figura 1
+Para o armazenamento dos dados lidos em nosso programa, utilizamos o array chamado Vector que possui como tipo nossa TAD Processo e como nome de lista. Esse vector é chamado na main do programa, conforme apresentado na Figura 2.
+
+Figura 2
+	Ainda na main, se inicia uma estrutura de repetição while para que possa ser efetuada a entrada de um ou mais processos de acordo com o desejado pelo usuário. O limite máximo de processos aceitos no programa que foi orientado pelo professor é de 15 processos.
+	Finalizadas as entradas dos processos, há um método dentro da Struct Processo que receberá como parâmetro dois processos armazenados em nosso vector Lista e fará a comparação para ordenação. A lista será por ordem de menor tempo de chegada e para efeito de desempate é utilizado o tempo de execução dos processos.
+
+Figura 3
+A função na main que executa a ordenação está descrita na Figura 4.
+
+Figura 4
+Após entradas e ordenação feitas, a simulação do algoritmo SRT executa, de acordo com a Figura 5:
+
+Figura 5
+
