@@ -1,1 +1,1 @@
-# Algoritmos de Escalonamento: SRT e RR
+[Uploading Estou compartilhando o arquivo 'SO - Relatório Final' com você.md…]()
