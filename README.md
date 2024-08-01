@@ -10,7 +10,8 @@
 
 ##### Professor: 
 + Gilerto Viana de Oliveira
-
+  
+***
 ## Descrição do projeto
 
 O trabalho consiste em aplicar os algoritmos mostrados em sala, criando uma espécie de simulação de uso desses algoritmos. Para isso, os alunos deverão se organizar em grupos e atender os requisitos de execução e apresentação solicitados pelo professor.
