@@ -37,7 +37,7 @@ struct Processo {
     }
 };
 ~~~
-<div allign="center">;
+<div allign="center">
 ##### Figura 1
 </div>
 
