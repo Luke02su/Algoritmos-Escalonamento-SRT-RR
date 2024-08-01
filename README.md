@@ -1,4 +1,4 @@
-# <mark>Relatório: Algoritmos de Escalonamento (SRT e RR)</mark>
+# Relatório: Algoritmos de Escalonamento (SRT e RR)
 
 ##### Integrantes: 
 + Lucas Samuel Dias
@@ -37,8 +37,9 @@ struct Processo {
     }
 };
 ~~~
-
+<div allign='center'>;
 ##### Figura 1
+<div>
 
 Para o armazenamento dos dados lidos em nosso programa, utilizamos o array chamado Vector que possui como tipo nossa TAD Processo e como nome de lista. Esse vector é chamado na main do programa, conforme apresentado na Figura 2.
 
