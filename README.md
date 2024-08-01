@@ -22,8 +22,8 @@ A linguagem de programação escolhida para o desenvolvimento do presente projet
 ## Estrutura do código
 
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Na main do nosso programa de escalonamento, há um laço de repetição que sempre executa no mínimo uma vez. Nele há um switch em que é pedido uma entrada do usuário em relação a qual algoritmo de escalonamento será executado, puxando, dessa forma, o bloco de código em que há nessas funções, as quais são: srt() e void rr(), as quais, não possuem retorno.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;É possível a saída do programa de maneira não forçada, como quando um determinado escalonador é finalizado. Desse modo, o usuário poderá escolher finalizar o programa. E, se ele digitar alguma opção inválida dentre as disponpiveis, o laço se repetirá até alguma dentre as três opções seja escolhida, conforme é demonstrado na figura 1.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Na main do nosso programa de escalonamento, há um laço de repetição que sempre executa no mínimo uma vez. Nele há um switch em que é pedido uma entrada do usuário em relação a qual algoritmo de escalonamento será executado, puxando, dessa forma, o bloco de código em que há nessas funções, as quais são: srt() e void rr(), as quais, não possuem retorno.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;É possível a saída do programa de maneira não forçada, como quando um determinado escalonador é finalizado. Desse modo, o usuário poderá escolher finalizar o programa. E, se ele digitar alguma opção inválida dentre as disponpiveis, o laço se repetirá até alguma dentre as três opções seja escolhida, conforme é demonstrado na figura 1.
 </p>
 
 ~~~c++
