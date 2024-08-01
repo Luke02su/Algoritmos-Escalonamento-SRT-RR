@@ -1,10 +1,10 @@
-# Relatório: Algoritmos de Escalonamento (SRT e RR)
+# <mark>Relatório: Algoritmos de Escalonamento (SRT e RR)</mark>
 
 ##### Integrantes: 
 + Lucas Samuel Dias
 + Andreia
 + Nathália
-Texto <mark>marcado</mark>
+
 ##### Curso: 
 + ADS - Análise e Desenvolvimento de Sistemas
 
