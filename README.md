@@ -1,8 +1,4 @@
-# Relatório Sobre os Algoritmos de Escalonamento (SRT e RR)
-## Disciplina: Sistemas Operacionais
-#
-
-
+# Relatório: Algoritmos de Escalonamento (SRT e RR)
 
 ## Descrição do projeto
 
