@@ -14,8 +14,8 @@
 ## Descrição do projeto
 
 <p align="justify">
-&nbspO trabalho consiste em aplicar os algoritmos mostrados em sala, criando uma espécie de simulação de uso desses algoritmos. Para isso, os alunos deverão se organizar em grupos e atender os requisitos de execução e apresentação solicitados pelo professor.<br>
-&nbspOs algoritmos a serem desenvolvidos irão simular os escalonadores Round-Robin e SRT, sendo que as entradas serão manuais no início do programa conforme orientação prévia.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O trabalho consiste em aplicar os algoritmos mostrados em sala, criando uma espécie de simulação de uso desses algoritmos. Para isso, os alunos deverão se organizar em grupos e atender os requisitos de execução e apresentação solicitados pelo professor.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os algoritmos a serem desenvolvidos irão simular os escalonadores Round-Robin e SRT, sendo que as entradas serão manuais no início do programa conforme orientação prévia.
 A linguagem de programação escolhida para o desenvolvimento do presente projeto é C++.
 </p>
 
@@ -65,8 +65,8 @@ Figura 1
 </p>
 
 <p align="justify">
-	Para cada processo lido, deverá ser armazenado o nome, o tempo de chegada e tempo de execução realizada pela CPU. Para a leitura desses dados, utilizamos o tipo abstrato de dados (TAD), conhecido como struct. Por meio dessa struct, que chamamos de Processo, será solicitado ao usuário a entrada dos dados necessários para os algoritmos RR e SRT, conforme a ilustração da Figura 2.<br>
-	Essa struct será implementada na bloco de código das funções void srt() e rr().
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para cada processo lido, deverá ser armazenado o nome, o tempo de chegada e tempo de execução realizada pela CPU. Para a leitura desses dados, utilizamos o tipo abstrato de dados (TAD), conhecido como struct. Por meio dessa struct, que chamamos de Processo, será solicitado ao usuário a entrada dos dados necessários para os algoritmos RR e SRT, conforme a ilustração da Figura 2.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Essa struct será implementada na bloco de código das funções void srt() e rr().
 </p>
 
 ~~~c++
