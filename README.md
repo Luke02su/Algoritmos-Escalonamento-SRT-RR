@@ -19,7 +19,7 @@ A linguagem de programação escolhida para o desenvolvimento do presente projet
 
 ## Estrutura do código
 
-Para cada processo lido, deverá ser armazenado o nome, o tempo de processamento pela CPU e o tempo de chegada do mesmo. Para a leitura desses dados, utilizamos o tipo abstrato de dados Struct. Através dessa Struct que chamamos de Processo, será solicitado ao usuário a entrada dos dados necessários para os algoritmos Round-Robin e SRT conforme ilustração da Figura 1.
+Para cada processo lido, deverá ser armazenado o nome, o tempo de chegada e tempo de execução realizada pela CPU. Para a leitura desses dados, utilizamos o tipo abstrato de dados 'struct'. Por meio dessa struct, que chamamos de 'Processo', será solicitado ao usuário a entrada dos dados necessários para os algoritmos RR e SRT, conforme ilustração da Figura 1.
 
 ~~~c++
 struct Processo {
@@ -41,9 +41,29 @@ struct Processo {
 Figura 1
 </p>
 
-Para o armazenamento dos dados lidos em nosso programa, utilizamos o array chamado Vector que possui como tipo nossa TAD Processo e como nome de lista. Esse vector é chamado na main do programa, conforme apresentado na Figura 2.
+Para o armazenamento dos dados lidos em nosso programa, dentro da função void srt() e rr(), utilizamos o array chamado vector, que possui como tipo nosso TAD Processo, denominado lista. Dentro da função há um laço de repetição que pede ao usuário se ele deseja adicionar um processo. Caso a condição seja atendida, é criado um novo processo e inserido no final da lista, senão simplesmente sai do laço, conforme é demonstrado no código comentado na figura 3 logo abaixo. 
+Como a estrutura do bloco de código de void srt() é idêntico ao do void rr(), evitamos duplicá-lo no relatório por quesitos redundância e poluição visual.
 
 ~~~c++
+// Função de escalonamento Shortest Remaining Time (SRT)
+void srt() { // void rr() funciona da mesma maneira
+    vector<Processo> lista; // Lista para armazenar os processos
+    int resp; // Variável para armazenar a resposta do usuário
+
+    // Loop para adicionar processos
+    while (true) {
+        cout << "\nVocê deseja adicionar um processo?\n";
+        cout << "1 - Sim\n2 - Não\n\n";
+        cout << "Escolha: ";
+        cin >> resp; // Lê a escolha do usuário
+        if (resp == 1) {
+            Processo p; // Cria um novo processo
+            p.receberProcesso(); // Recebe os detalhes do processo
+            lista.push_back(p); // Adiciona o processo à lista
+        } else if (resp == 2) {
+            break; // Sai do loop se o usuário não quiser adicionar mais processos
+        }
+    }
 int main() {
     setlocale(LC_ALL, "Portuguese"); // Configura a localidade para português para formatar a saída
 
