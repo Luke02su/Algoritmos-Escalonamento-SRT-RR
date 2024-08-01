@@ -1,13 +1,16 @@
-# Algoritmos de Escalonamento (SRT e RR)
+# Relatório Sobre os Algoritmos de Escalonamento (SRT e RR)
+## Disciplina: Sistemas Operacionais
+#
 
 
-Descrição do projeto
+
+## Descrição do projeto
 
 O trabalho consiste em aplicar os algoritmos mostrados em sala, criando uma espécie de simulação de uso desses algoritmos. Para isso, os alunos deverão se organizar em grupos e atender os requisitos de execução e apresentação solicitados pelo professor.
 Os algoritmos a serem desenvolvidos irão simular os escalonadores Round-Robin e SRT, sendo que as entradas serão manuais no início do programa conforme orientação prévia.
 A linguagem de programação escolhida para o desenvolvimento do presente projeto é C++.
 
-Algoritmo SRT
+## Algoritmo SRT
 
 Para cada processo lido, deverá ser armazenado o nome, o tempo de processamento pela CPU e o tempo de chegada do mesmo. Para a leitura desses dados, utilizamos o tipo abstrato de dados Struct. Através dessa Struct que chamamos de Processo, será solicitado ao usuário a entrada dos dados necessários para os algoritmos Round-Robin e SRT conforme ilustração da Figura 1.
 
