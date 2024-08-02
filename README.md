@@ -90,8 +90,8 @@ Figura 2
 </p>
 
 <p align="justify">
-Para o armazenamento dos dados lidos em nosso programa, dentro da função void srt() e rr(), utilizamos o array chamado vector, que possui como tipo nosso TAD Processo, denominado lista. Dentro da função há um laço de repetição while, que pede ao usuário se ele deseja adicionar um processo, quantas vezes ele desejar. (No entanto, o limite máximo instruído pelo professor fora de 15 processos.) Caso a condição seja atendida, é criado um novo processo, recebe-se seus dados relativos (nome, tempo de chegada e tempo de execução) e inserido no final da lista, senão simplesmente sai do laço, conforme é demonstrado no código da Figura 3.<br>
-Como a estrutura do bloco de código da função void srt() é idêntico ao do void rr(), evitamos duplicá-lo no relatório por quesitos de redundância e poluição visual.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para o armazenamento dos dados lidos em nosso programa, dentro da função void srt() e rr(), utilizamos o array chamado vector, que possui como tipo nosso TAD Processo, denominado lista. Dentro da função há um laço de repetição while, que pede ao usuário se ele deseja adicionar um processo, quantas vezes ele desejar. (No entanto, o limite máximo instruído pelo professor fora de 15 processos.) Caso a condição seja atendida, é criado um novo processo, recebe-se seus dados relativos (nome, tempo de chegada e tempo de execução) e inserido no final da lista, senão simplesmente sai do laço, conforme é demonstrado no código da Figura 3.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como a estrutura do bloco de código da função void srt() é idêntico ao do void rr(), evitamos duplicá-lo no relatório por quesitos de redundância e poluição visual.
 </p>
 
 ~~~c++
@@ -120,9 +120,36 @@ void srt() { // void rr() funciona da mesma maneira
 Figura 3
 </p>
 
-Figura 2
-	Ainda na main, se inicia uma estrutura de repetição while para que possa ser efetuada a entrada de um ou mais processos de acordo com o desejado pelo usuário. O limite máximo de processos aceitos no programa que foi orientado pelo professor é de 15 processos.
-	Finalizadas as entradas dos processos, há um método dentro da Struct Processo que receberá como parâmetro dois processos armazenados em nosso vector Lista e fará a comparação para ordenação. A lista será por ordem de menor tempo de chegada e para efeito de desempate é utilizado o tempo de execução dos processos.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finalizadas as entradas dos n processos do algoritmo SRT, implementa-se a função com retorno: boolean ordenarSRT(Processo a, Processo b), na qual recebe-se da struct Processo há a passagem de dois parâmetros relativos aos processos armazenados no vector Lista. E, com isso, far-se-á a comparação para ordenação. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O critério estabelecido para a lista será por ordem de menor tempo de chegad, e para efeito de desempate é utilizado o menor tempo de execução dos processos. Caso o tempo de chegada e execução forem os mesmos, dá-se preferência pelo nome do processo inserido pelo usuário inicialmente.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tais eventos são conforme denotado na Figura 4.
+
+<p align="center", color='blue'>
+Figura 4
+</p>
+
+~~~c++
+ // Função para ordenar os processos
+bool ordenarSRT(Processo a, Processo b) {
+    // Ordena os processos primeiro pelo tempo de chegada
+    if (a.tempoChegada == b.tempoChegada) {
+        // Se o tempo de chegada for o mesmo, ordena pelo tempo de execução
+        if (a.tempoExecucao == b.tempoExecucao) {
+            // Se o tempo de execução também for o mesmo, ordena pelo nome
+            return a.nome < b.nome; // Ordena os processos com o mesmo tempo de chegada e execução pelo nome
+        }
+        return a.tempoExecucao < b.tempoExecucao; // Ordena os processos pelo menor tempo de execução se os tempos de chegada forem iguais
+    }
+    return a.tempoChegada < b.tempoChegada; // Ordena os processos pelo menor tempo de chegada
+}
+
+bool ordenarRR(Processo a, Processo b){
+    if(a.tempoChegada == b.tempoChegada){
+        return a.nome < b.nome;
+    }
+    return a.tempoChegada < b.tempoChegada;
+}
+~~~
 
 Figura 3
 A função na main que executa a ordenação está descrita na Figura 4.
