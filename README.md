@@ -122,9 +122,11 @@ Figura 3
 
 # Estrutura exclusiva do SRT
 
+<p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finalizadas as entradas dos n processos do algoritmo SRT, implementa-se a função com retorno: boolean ordenarSRT(Processo a, Processo b), na qual recebe-se da struct Processo há a passagem de dois parâmetros relativos aos processos armazenados no vector Lista. E, com isso, far-se-á a comparação para ordenação.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O critério estabelecido para a lista será por ordem de menor tempo de chegad, e para efeito de desempate é utilizado o menor tempo de execução dos processos. Caso o tempo de chegada e execução forem os mesmos, dá-se preferência pelo nome do processo inserido pelo usuário inicialmente.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O critério estabelecido para a lista será por ordem de menor tempo de chegad, e para efeito de desempate é utilizado o menor tempo de execução dos processos. Caso o tempo de chegada e execução forem os mesmos, dá-se preferência pelo nome do processo inserido pelo usuário inicialmente.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tais eventos são conforme denotado na Figura 4.
+</p>
 
 ~~~c++
  // Função para ordenar os processos
@@ -146,8 +148,10 @@ bool ordenarSRT(Processo a, Processo b) {
 Figura 4
 </p>
 
-Retornando ao bloco de código da funcão SRT, passa-se via parâmetro na função sort, a função ordenarSRT. É ordenado do início ao fim da lista os processos presentes, conforme fora já explicitado anteriormente, seguindo critérios de ordem de chegada e tempo de execução.
-  A seguir, há um laço de repetição while que se repete enquanto a lista não estiver vazia. Inicia-se o menor tempo de execução como valor máximo inteiro e inicia-se a posição atual como inválida, ou sseja, menor que 1.
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retornando ao bloco de código da funcão SRT, passa-se via parâmetro na função sort, a função ordenarSRT. É ordenado do início ao fim da lista os processos presentes, conforme fora já explicitado anteriormente, seguindo critérios de ordem de chegada e tempo de execução.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A seguir, há um laço de repetição while que se repete enquanto a lista não estiver vazia. Inicia-se o menor tempo de execução como valor máximo inteiro e inicia-se a posição atual como inválida, ou sseja, menor que 1.
+</p>
 
 ~~~c++
     // Ordena a lista de processos pelo tempo de chegada, execução e nome
@@ -188,10 +192,9 @@ Retornando ao bloco de código da funcão SRT, passa-se via parâmetro na funç�
 }
 ~~~
 
-Métodos
-
-Figura 4
-Após entradas e ordenação feitas, a simulação do algoritmo SRT executa, de acordo com a Figura 5:
-
+<p align="center", color='blue'>
 Figura 5
+</p>
+
+Métodos
 
