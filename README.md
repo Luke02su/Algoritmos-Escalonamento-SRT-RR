@@ -120,7 +120,7 @@ void srt() { // void rr() funciona da mesma maneira a parte de adicionar process
 <p align="center", color='blue'>
 Figura 3
 </p>
-
+<br>
 # Estrutura exclusiva do SRT
 
 <p align="justify">
@@ -148,7 +148,7 @@ bool ordenarSRT(Processo a, Processo b) {
 <p align="center", color='blue'>
 Figura 4
 </p>
-
+<br>
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retornando ao bloco de código da funcão SRT, passa-se via parâmetro na função sort, a função ordenarSRT. É ordenado do início ao fim da lista os processos presentes, conforme fora já explicitado anteriormente, seguindo critérios de ordem de chegada e tempo de execução.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A seguir, há um laço de repetição while que se repete enquanto a lista não estiver vazia. Inicia-se o menor tempo de execução como valor máximo inteiro e inicia-se a posição atual como inválida, ou sseja, menor que 1.
@@ -196,6 +196,7 @@ Figura 4
 <p align="center", color='blue'>
 Figura 5
 </p>
+<br>
 
 Métodos
 
