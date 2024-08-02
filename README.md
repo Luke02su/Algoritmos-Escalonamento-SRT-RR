@@ -15,7 +15,7 @@
 
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O trabalho consiste em aplicar os algoritmos de escalonamento mostrados em sala de aula, criando uma espécie de simulação de uso destes algoritmos: SRT e RR (Round. Para isso, os alunos deverão se organizar em grupos e atender os requisitos de execução e apresentação solicitados pelo professor.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os algoritmos a serem desenvolvidos irão simular os escalonadores Shortest Remaining Time First (SRT) e Round-Robin (RR) sendo que as entradas serão manuais no início do programa conforme orientação prévia.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os algoritmos a serem desenvolvidos irão simular os escalonadores Shortest Remaining Time First (SRT) e Round-Robin (RR) sendo que as entradas serão manuais no início do programa conforme orientação prévia.<br>
 A linguagem de programação escolhida para o desenvolvimento do presente projeto é C++.
 </p>
 
@@ -59,6 +59,7 @@ int main() {
     return 0; // Finaliza o programa
 }
 ~~~
+<br>
 
 <p align="center", color='blue'>
 Figura 1
@@ -88,7 +89,7 @@ struct Processo {
 <p align="center", color='blue'>
 Figura 2
 </p>
-
+<br>
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para o armazenamento dos dados lidos em nosso programa, dentro da função void srt() e rr(), utilizamos o array chamado vector, que possui como tipo nosso TAD Processo, denominado lista. Dentro da função há um laço de repetição while, que pede ao usuário se ele deseja adicionar um processo, quantas vezes ele desejar. (No entanto, o limite máximo instruído pelo professor fora de 15 processos.) Caso a condição seja atendida, é criado um novo processo, recebe-se seus dados relativos (nome, tempo de chegada e tempo de execução) e inserido no final da lista, senão simplesmente sai do laço, conforme é demonstrado no código da Figura 3.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como a estrutura inicial do bloco de código da função void srt() é idêntico ao do void rr(), evitamos duplicá-lo no relatório por quesitos de redundância e poluição visual.
