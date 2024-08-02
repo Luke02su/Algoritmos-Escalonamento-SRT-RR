@@ -19,7 +19,7 @@
 A linguagem de programação escolhida para o desenvolvimento do presente projeto é C++.
 </p>
 
-## Estrutura do código
+## Estrutura compartilhada entre SRT e RR
 
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Na main do nosso programa de escalonamento, há um laço de repetição que sempre executa no mínimo uma vez. Nele há um switch em que é pedido uma entrada do usuário em relação a qual algoritmo de escalonamento será executado, puxando, dessa forma, o bloco de código em que há nessas funções, as quais são: srt() e void rr(), as quais, não possuem retorno.<br>
@@ -91,12 +91,12 @@ Figura 2
 
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para o armazenamento dos dados lidos em nosso programa, dentro da função void srt() e rr(), utilizamos o array chamado vector, que possui como tipo nosso TAD Processo, denominado lista. Dentro da função há um laço de repetição while, que pede ao usuário se ele deseja adicionar um processo, quantas vezes ele desejar. (No entanto, o limite máximo instruído pelo professor fora de 15 processos.) Caso a condição seja atendida, é criado um novo processo, recebe-se seus dados relativos (nome, tempo de chegada e tempo de execução) e inserido no final da lista, senão simplesmente sai do laço, conforme é demonstrado no código da Figura 3.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como a estrutura do bloco de código da função void srt() é idêntico ao do void rr(), evitamos duplicá-lo no relatório por quesitos de redundância e poluição visual.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como a estrutura inicial do bloco de código da função void srt() é idêntico ao do void rr(), evitamos duplicá-lo no relatório por quesitos de redundância e poluição visual.
 </p>
 
 ~~~c++
 // Função de escalonamento Shortest Remaining Time (SRT)
-void srt() { // void rr() funciona da mesma maneira
+void srt() { // void rr() funciona da mesma maneira a parte de adicionar processos
     vector<Processo> lista; // Lista para armazenar os processos
     int resp; // Variável para armazenar a resposta do usuário
 
@@ -120,13 +120,11 @@ void srt() { // void rr() funciona da mesma maneira
 Figura 3
 </p>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finalizadas as entradas dos n processos do algoritmo SRT, implementa-se a função com retorno: boolean ordenarSRT(Processo a, Processo b), na qual recebe-se da struct Processo há a passagem de dois parâmetros relativos aos processos armazenados no vector Lista. E, com isso, far-se-á a comparação para ordenação. 
+# Estrutura exclusiva do SRT
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finalizadas as entradas dos n processos do algoritmo SRT, implementa-se a função com retorno: boolean ordenarSRT(Processo a, Processo b), na qual recebe-se da struct Processo há a passagem de dois parâmetros relativos aos processos armazenados no vector Lista. E, com isso, far-se-á a comparação para ordenação.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O critério estabelecido para a lista será por ordem de menor tempo de chegad, e para efeito de desempate é utilizado o menor tempo de execução dos processos. Caso o tempo de chegada e execução forem os mesmos, dá-se preferência pelo nome do processo inserido pelo usuário inicialmente.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tais eventos são conforme denotado na Figura 4.
-
-<p align="center", color='blue'>
-Figura 4
-</p>
 
 ~~~c++
  // Função para ordenar os processos
@@ -142,18 +140,53 @@ bool ordenarSRT(Processo a, Processo b) {
     }
     return a.tempoChegada < b.tempoChegada; // Ordena os processos pelo menor tempo de chegada
 }
-
-bool ordenarRR(Processo a, Processo b){
-    if(a.tempoChegada == b.tempoChegada){
-        return a.nome < b.nome;
-    }
-    return a.tempoChegada < b.tempoChegada;
-}
 ~~~
 
-Figura 3
-A função na main que executa a ordenação está descrita na Figura 4.
+<p align="center", color='blue'>
+Figura 4
+</p>
 
+Retornando ao bloco de código da funcão SRT, passa-se via parâmetro na função sort, a função ordenarSRT. É ordenado do início ao fim da lista os processos presentes, conforme fora já explicitado anteriormente, seguindo critérios de ordem de chegada e tempo de execução.
+  A seguir, há um laço de repetição while que se repete enquanto a lista não estiver vazia. Inicia-se o menor tempo de execução como valor máximo inteiro e inicia-se a posição atual como inválida, ou sseja, menor que 1.
+
+~~~c++
+    // Ordena a lista de processos pelo tempo de chegada, execução e nome
+    sort(lista.begin(), lista.end(), ordenarSRT);
+
+    int tempoAtual = 0; // Inicializa o tempo atual
+
+    // Loop principal para executar os processos com base no algoritmo SRT
+    while (!lista.empty()) {
+        int menorTempExec = INT_MAX; // Inicializa o menor tempo de execução como o valor máximo inteiro
+        int posAtual = -1; // Inicializa a posição do processo atual como inválida
+
+        // Procura o processo com o menor tempo de execução restante que já chegou
+        for (int i = 0; i < (int)lista.size(); i++) {
+            if (lista[i].tempoChegada <= tempoAtual) {
+                if (lista[i].tempoExecucao < menorTempExec) {
+                    menorTempExec = lista[i].tempoExecucao; // Atualiza o menor tempo de execução
+                    posAtual = i; // Atualiza a posição do processo com o menor tempo de execução
+                }
+            } else {
+                break; // Interrompe o loop se os processos ainda não chegaram
+            }
+        }
+
+        // Executa o processo selecionado
+        if (posAtual >= 0) {
+            lista[posAtual].tempoExecucao--; // Decrementa o tempo de execução restante do processo
+            cout << "\nProcesso: " << lista[posAtual].nome << ". Tempo: " << tempoAtual << ".";
+            if (lista[posAtual].tempoExecucao == 0) {
+                // Se o tempo de execução do processo chegar a zero, o processo terminou
+                cout << "\nProcesso " << lista[posAtual].nome << " terminou no tempo " << tempoAtual << ".";
+                lista.erase(lista.begin() + posAtual); // Remove o processo da lista
+            }
+        }
+        tempoAtual++; // Incrementa o tempo atual
+    }
+    cout << endl << endl;
+}
+~~~
 
 Métodos
 
