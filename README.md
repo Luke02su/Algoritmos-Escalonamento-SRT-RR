@@ -151,8 +151,9 @@ Figura 4
 <br>
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retornando ao bloco de código da funcão SRT, passa-se via parâmetro na função sort, a função ordenarSRT. É ordenado do início ao fim da lista os processos presentes, conforme fora já explicitado anteriormente, seguindo critérios de ordem de chegada e tempo de execução.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A seguir, há um laço de repetição while que se repete enquanto a lista não estiver vazia. Inicia-se o menor tempo de execução como valor máximo inteiro e inicia-se a posição atual como inválida, ou sseja, menor que 1.
-</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A seguir, há um laço de repetição while que se repete enquanto a lista não estiver vazia. Inicia-se o menor tempo de execução como valor máximo inteiro e inicia-se a posição atual como menor que 0, pois os os processos iniciam-se em no mínimo 0, e o tempo atual em 0. Procura-se o menor tempo de execução restante que já tenha chegado na CPU, por meio de laço de repetiçao determinado (for) e condicionais (if). Atualiza-se o menor tempo de execução e a posição o processo com menor tempo de execução, caso o tempo de chegada seja menor ou igual ao tempo atual, laço é interrompido.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para executar, ou seja, imprimir a ordenção dos processos, há uma condição na qual a posição deve ser maior ou igual a 0. O tempo de execução total do processo x é decrementado. Os detalhes do processo são, por fim impresso. E, quando seu tempo de execução zerar, imprime-se o término e limpa-se ele da lista.
+Por fim, incrementa-se o tempo atual.</p>
 
 ~~~c++
     // Ordena a lista de processos pelo tempo de chegada, execução e nome
