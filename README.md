@@ -1,15 +1,15 @@
 # Relatório: Algoritmos de Escalonamento (SRT e RR)
 
 ##### Integrantes: 
-+ Lucas Samuel Dias
++ [Lucas Samuel Dias](https://github.com/luke02su)
 + Andreia
-+ Nathália
++ [Nathália Beatriz](https://github.com/nathaliabeatriz)
 
 ##### Curso: 
 + ADS - Análise e Desenvolvimento de Sistemas
 
 ##### Professor: 
-+ Gilberto Viana de Oliveira [GitHub](https://github.com/gvoliveira)
++ [Gilberto Viana de Oliveira](https://github.com/gvoliveira)
   
 ## Descrição do projeto
 
