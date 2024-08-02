@@ -9,7 +9,7 @@
 + ADS - Análise e Desenvolvimento de Sistemas
 
 ##### Professor: 
-+ Gilerto Viana de Oliveira
++ Gilberto Viana de Oliveira [GitHub](https://github.com/gvoliveira)
   
 ## Descrição do projeto
 
