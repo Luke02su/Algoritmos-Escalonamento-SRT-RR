@@ -121,6 +121,7 @@ void srt() { // void rr() funciona da mesma maneira a parte de adicionar process
 Figura 3
 </p>
 <br>
+
 ## Estrutura exclusiva do SRT
 
 <p align="justify">
