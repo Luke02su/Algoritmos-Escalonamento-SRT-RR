@@ -121,7 +121,7 @@ void srt() { // void rr() funciona da mesma maneira a parte de adicionar process
 Figura 3
 </p>
 <br>
-# Estrutura exclusiva do SRT
+## Estrutura exclusiva do SRT
 
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finalizadas as entradas dos n processos do algoritmo SRT, implementa-se a função com retorno: boolean ordenarSRT(Processo a, Processo b), na qual recebe-se da struct Processo há a passagem de dois parâmetros relativos aos processos armazenados no vector Lista. E, com isso, far-se-á a comparação para ordenação.<br>
