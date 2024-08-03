@@ -96,6 +96,17 @@ void srt() {
     cout << endl << endl;
 }
 
+void verificarProntosRR(vector<Processo> &lista, int tempoAtual, queue<Processo>&fila){
+    for(int i=0; i<(int)lista.size(); i++){
+        if(lista[i].tempoChegada <= tempoAtual){
+            fila.push(lista[i]);
+            lista.erase(lista.begin() + i);
+        } else {
+            break;
+        }
+    }
+}
+
 // Função de escalonamento Round-Robin (RR) - ainda não implementada
 void rr() {
     // Round-Robin é um algoritmo de escalonamento onde cada processo é executado por um tempo fixo (quantum)
@@ -123,14 +134,14 @@ void rr() {
     cin >> quantum;
 
     sort(lista.begin(), lista.end(), ordenarRR);
+
     queue<Processo>fila;
-    for(int i=0; i<lista.size(); i++){
-        fila.push(lista[i]);
-    }
 
     int tempoAtual = 0;
-    while(!fila.empty()){
-        if(fila.front().tempoChegada <= tempoAtual){
+    while(!lista.empty() || !fila.empty()){
+        verificarProntosRR(lista, tempoAtual, fila);
+
+        if(!fila.empty()){
             if(quantum > fila.front().tempoExecucao){
                 int tempExec = fila.front().tempoExecucao;
                 for(int i=0; i<tempExec; i++){
@@ -138,6 +149,7 @@ void rr() {
                     fila.front().tempoExecucao--;
                     tempoAtual++;
                 }
+                verificarProntosRR(lista, tempoAtual, fila);
                 fila.pop();
 
             } else {
@@ -146,9 +158,11 @@ void rr() {
                     fila.front().tempoExecucao--;
                     tempoAtual++;
                 }
+                verificarProntosRR(lista, tempoAtual, fila);
                 fila.push(fila.front());
                 fila.pop();
             }
+
         } else {
             tempoAtual++;
         }
