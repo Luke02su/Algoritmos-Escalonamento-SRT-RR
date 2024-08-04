@@ -220,7 +220,9 @@ Figura 6
 </p>
 <br>
 
+<p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Na função void verificarProntosRR(...), que será chamada na função rr(), verifica-se se os processos estão prontos para serem adicionados à fila, na qual ordena-se pela ordem de chegada. Os parâmetros passados por referência são relacionados à lista e à fila, com exeção do tempo atual. Enquanto a lista o tempo de chegada de um processo x for menor ou igual ao tempo atual transcorrido, ele é adicionado à fila e apagado da lista. Caso tal condição não seja atendida, sai-se do laço for, conforme é denotado na Figura 7. 
+</p>
 
 ~~~c+++
 // Função para verificar e mover processos prontos para a fila para o algoritmo Round-Robin (RR)
@@ -241,8 +243,10 @@ Figura 7
 </p>
 <br>
 
+<p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Após ser executado o bloco de código idêntico ao SRT, referente à escolha do usuário, pede-se o quantum de processamento. Em seguida, ordena-se a lista em seguida, do mesmo modo que o SRT. Cria-se uma fila (queue) para armazenar os processos prontos, indo para o final da fila. Há um laço de repetição que roda enquanto a lista e a fila estiverem vazias. Nele move-se, os processos para a fila. Caso a fila não esteja vazia e o quantum inserido pelo usuário seja maior que o tempo de execução de um processo do início da fila, o tempo de execução temporário do processo atual recebe tal processo da fila. E, enquanto o tempo de execução temporário não for percorrido por completo, imprime-se a fila de processos prontos. Decrementa-se o tempo de execução do processo atual e incrementa o tempo atual. Por fim, move-se novos processos prontos para a fila e apaga-se o processo da fila.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caso o quantum seja menor que o processo total de execução atual da fila, transcorre-se o processo atual enquanto for menor que o quantum, imprimindo-o. E decrementa-se o tempo de execução do processo da fila e aumenta-se o tempo atual transcorrido. Novamente, verifica-se os processos prontos, movendo-os para a fila. coloca-se o processo de volta para a fila e remove-se o processo da fila. E, se a lista ou a fila não estiverem vazias, aumenta-se o tempo atual.
+</p>
 
 <p align="center", color='blue'>
 Figura 8
@@ -298,6 +302,7 @@ Figura 8
 </p>
 <br>
 
+<p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para validarmos a lógica dos escalonadores SRT e RR, buscamos compreender melhor como funcionava tais algoritmos por meio de vídeos explicativos situados no YouTube por outros professores e alunos. À princípio, o escalonador SRT fora entendido e aplicado com maior facilidade pelos integrantes, em que o processo com o menor tempo de execução, atrelado ao tempo no qual chegou, é priorizado. Quanto ao RR, priorizado pelo tempo de chegada, houve-se uma dificuldade maior de aplicação e entendimento devido ao quantum e o retorno para a fila de prontos, pois nos vídeos vistos parecia haver uma consonânscia entre eles referente aos últimos processos que retornam para o final da fila ao excederem o quantum.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desse modo, utilizamos três testes, os quais estão presentes nesses vídeos. O primeiro corroborou com a funcionalidade do SRT, já o segundo houve uma certa mudança de posição (embora pensamos que possa ser devido ao início do tempo atual, 0 ou 1, ou seja, sendo uma questão interpretativa) e o terceiro validou o RR.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logo abaixo há os exemplos que foram utilizados para aferir os algoritmos de escalonamento.
