@@ -308,7 +308,7 @@ Figura 8
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logo abaixo há as Figuras 9, 10 e 11 exemplos que foram utilizados para aferir os algoritmos de escalonamento.
 </p>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Captura de tela 2024-08-04 103326](https://github.com/user-attachments/assets/5a257ebe-714e-4744-af07-74bfa9cd2a3e)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Captura de tela 2024-08-04 103326](https://github.com/user-attachments/assets/5a257ebe-714e-4744-af07-74bfa9cd2a3e)
 
 <p align="center", color='blue'>
 Figura 9
