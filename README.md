@@ -315,3 +315,9 @@ Figura 9
 </p>
 <br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Captura de tela 2024-08-04 101845](https://github.com/user-attachments/assets/146527bc-7e56-43ea-bc28-e4b8302101bf)
+
+<p align="center", color='blue'>
+Figura 10
+</p>
+<br>
