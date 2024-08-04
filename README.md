@@ -1,4 +1,3 @@
-![Captura de tela 2024-08-04 103326](https://github.com/user-attachments/assets/38987828-5110-4054-b400-2de857340d8f)
 # Relatório: Algoritmos de Escalonamento (SRT e RR)
 
 ##### Integrantes: 
@@ -316,7 +315,7 @@ Figura 9
 </p>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Captura de tela 2024-08-04 103502](https://github.com/user-attachments/assets/cb3426a1-54d1-4de8-a77b-cb53c94764a3)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Captura de tela 2024-08-04 103326](https://github.com/user-attachments/assets/38987828-5110-4054-b400-2de857340d8f)
 
 
 <p align="center", color='blue'>
