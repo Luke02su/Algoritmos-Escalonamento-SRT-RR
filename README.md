@@ -6,7 +6,7 @@
 + [Nathália Beatriz Leonel Santos](https://github.com/nathaliabeatriz)
 
 ##### Curso: 
-+ ADS - Análise e Desenvolvimento de Sistemas
++ [ADS - Análise e Desenvolvimento de Sistemas](https://iftm.edu.br/cursos/patrocinio/tecnologo/analise-e-desenvolvimento-de-sistemas/)
 
 ##### Professor: 
 + [Gilberto Viana de Oliveira](https://github.com/gvoliveira)
