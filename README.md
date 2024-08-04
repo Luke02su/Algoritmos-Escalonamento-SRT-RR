@@ -312,19 +312,19 @@ Figura 8
 
 
 <p align="center", color='blue'>
-<a href="https://www.youtube.com/watch?v=qQA2O6XgUY8&t=87s](https://www.youtube.com/watch?v=TnxgA1tF-CU">Vídeo demonstrando o procedimento da Figura 9 que passou no teste de mesa do RR</a>
+<a href="https://www.youtube.com/watch?v=qQA2O6XgUY8&t=87s](https://www.youtube.com/watch?v=TnxgA1tF-CU">Vídeo demonstrando o procedimento da Figura 9 -- passou no teste de mesa do RR</a>
 </p>
 <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Captura de tela 2024-08-04 103857](https://github.com/user-attachments/assets/adaf1e29-4319-479f-8363-d63fe1ead8f7)
 
 <p align="center", color='blue'>
-<a href="https://www.youtube.com/watch?v=aWlQYllBZDs&t=185s">Vídeo demonstrando o procedimento da Figura 10 que não passou no teste de mesa RR</a>
+<a href="https://www.youtube.com/watch?v=aWlQYllBZDs&t=185s">Vídeo demonstrando o procedimento da Figura 10 -- não passou no teste de mesa RR)</a>
 </p>
 <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Captura de tela 2024-08-04 104045](https://github.com/user-attachments/assets/e6f1f56f-2977-402e-8a09-bcfe5c6bd72d)
 
 <p align="center", color='blue'>
-<a href="https://www.youtube.com/watch?v=qQA2O6XgUY8&t=87s">Vídeo demonstrando o procedimento que passou no teste de mesa do RR</a>
+<a href="https://www.youtube.com/watch?v=qQA2O6XgUY8&t=87s">Vídeo demonstrando o procedimento da Figura 11 -- passou no teste de mesa do RR</a>
 </p>
