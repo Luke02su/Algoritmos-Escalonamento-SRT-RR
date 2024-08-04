@@ -200,5 +200,51 @@ Figura 5
 </p>
 <br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Após ser executado o bloco de código idêntico ao SRT, referente à escolha do usuário, pede-se o quantum de processamento. Em seguida, ordena-se a lista em seguida, do mesmo modo que o SRT. Cria-se uma fila (queue) para armazenar os processos prontos que exederam o quantum, indo para o final da fila. Há um laço de repetição que roda enquanto a lista e a fila estiverem vazias.
+
+~~~c++ 
+    int quantum; // Tempo fixo de execução para cada processo
+    cout << "Digite o quantum de processamento:\n";
+    cin >> quantum; // Lê o valor do quantum
+
+    sort(lista.begin(), lista.end(), ordenarRR); // Ordena a lista de processos pelo tempo de chegada e outros critérios
+
+    queue<Processo>fila; // Fila para armazenar processos prontos
+
+    int tempoAtual = 0; // Inicializa o tempo atual
+    while(!lista.empty() || !fila.empty()){
+        verificarProntosRR(lista, tempoAtual, fila); // Move processos prontos para a fila
+
+        if(!fila.empty()){
+            if(quantum > fila.front().tempoExecucao){
+                int tempExec = fila.front().tempoExecucao; // Tempo de execução do processo atual
+                for(int i=0; i<tempExec; i++){
+                    cout << "Processo " << fila.front().nome << ". Tempo: " << tempoAtual << ".\n";
+                    fila.front().tempoExecucao--; // Decrementa o tempo de execução do processo
+                    tempoAtual++; // Incrementa o tempo atual
+                }
+                verificarProntosRR(lista, tempoAtual, fila); // Move novos processos prontos para a fila
+                fila.pop(); // Remove o processo da fila
+
+            } else {
+                for(int i=0; i<quantum; i++){
+                    cout << "Processo " << fila.front().nome << ". Tempo: " << tempoAtual << ".\n";
+                    fila.front().tempoExecucao--; // Decrementa o tempo de execução do processo
+                    tempoAtual++; // Incrementa o tempo atual
+                }
+                verificarProntosRR(lista, tempoAtual, fila); // Move novos processos prontos para a fila
+                fila.push(fila.front()); // Coloca o processo de volta na fila
+                fila.pop(); // Remove o processo da fila
+            }
+
+        } else {
+            tempoAtual++; // Incrementa o tempo atual se a fila estiver vazia
+        }
+    }
+}
+~~~
+
 Métodos
+
+
 
