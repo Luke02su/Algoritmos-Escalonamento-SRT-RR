@@ -1,3 +1,4 @@
+![Captura de tela 2024-08-04 103326](https://github.com/user-attachments/assets/38987828-5110-4054-b400-2de857340d8f)
 # Relatório: Algoritmos de Escalonamento (SRT e RR)
 
 ##### Integrantes: 
@@ -308,14 +309,15 @@ Figura 8
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logo abaixo há as Figuras 9, 10 e 11 exemplos que foram utilizados para aferir os algoritmos de escalonamento.
 </p>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Captura de tela 2024-08-04 095901](https://github.com/user-attachments/assets/b0fa0af3-15b2-4c5a-912c-95f1b928be14)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Captura de tela 2024-08-04 103326](https://github.com/user-attachments/assets/5a257ebe-714e-4744-af07-74bfa9cd2a3e)
 
 <p align="center", color='blue'>
 Figura 9
 </p>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Captura de tela 2024-08-04 101845](https://github.com/user-attachments/assets/146527bc-7e56-43ea-bc28-e4b8302101bf)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Captura de tela 2024-08-04 103502](https://github.com/user-attachments/assets/cb3426a1-54d1-4de8-a77b-cb53c94764a3)
+
 
 <p align="center", color='blue'>
 Figura 10
