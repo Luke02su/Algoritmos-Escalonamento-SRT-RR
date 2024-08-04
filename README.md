@@ -295,12 +295,12 @@ Figura 8
 }
 ~~~
 
-## Métodos de validação
-
 <p align="center", color='blue'>
 Figura 8
 </p>
 <br>
+
+## Métodos de validação
 
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para validarmos a lógica dos escalonadores SRT e RR, buscamos compreender melhor como funcionava tais algoritmos por meio de vídeos explicativos situados no YouTube por outros professores e alunos. À princípio, o escalonador SRT fora entendido e aplicado com maior facilidade pelos integrantes, em que o processo com o menor tempo de execução, atrelado ao tempo no qual chegou, é priorizado. Quanto ao RR, priorizado pelo tempo de chegada, houve-se uma dificuldade maior de aplicação e entendimento devido ao quantum e o retorno para a fila de prontos, pois nos vídeos vistos parecia haver uma consonânscia entre eles referente aos últimos processos que retornam para o final da fila ao excederem o quantum.<br>
