@@ -312,7 +312,7 @@ Figura 8
 
 
 <p align="center", color='blue'>
-<a href="https://www.youtube.com/watch?v=qQA2O6XgUY8&t=87s](https://www.youtube.com/watch?v=TnxgA1tF-CU">Vídeo demonstrando o procedimento da Figura 9 -- passou no teste de mesa do RR</a>
+<a href="https://www.youtube.com/watch?v=TnxgA1tF-CU&t=441s">Vídeo demonstrando o procedimento da Figura 9 -- passou no teste de mesa do RR</a>
 </p>
 <br>
 
