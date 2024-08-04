@@ -200,7 +200,49 @@ Figura 5
 </p>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Após ser executado o bloco de código idêntico ao SRT, referente à escolha do usuário, pede-se o quantum de processamento. Em seguida, ordena-se a lista em seguida, do mesmo modo que o SRT. Cria-se uma fila (queue) para armazenar os processos prontos que exederam o quantum, indo para o final da fila. Há um laço de repetição que roda enquanto a lista e a fila estiverem vazias.
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Na função booleana ordenarRR(Processo a, Processo b), passa-se os parâmetros do tempo de chamada do primeiro processo e o do seguinte. Há uma condição na qual compara-se o tempo de chegada do processo a com o processo b. Caso seja igual, retorna-se o processo que teve o primeiro nome inserido, ou seja, o a. Caso contrário, retorna-se o processo que possui o menor tempo de chegada, ou seja, o a.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A dinâmica desse bloco de código possui uma estrutura semelhante ao do SRT entretanto, é mais simples, pois considera apenas o tempo de chegada, não levando em conta o tempo de execução, conforme é ilustrado na Figura 6.
+</p>
+
+~~~c++
+// Função para ordenar os processos para o algoritmo Round-Robin (RR)
+bool ordenarRR(Processo a, Processo b){
+    if(a.tempoChegada == b.tempoChegada){
+        return a.nome < b.nome; // Ordena os processos com o mesmo tempo de chegada pelo nome
+    }
+    return a.tempoChegada < b.tempoChegada; // Ordena os processos pelo menor tempo de chegada
+}
+~~~
+
+<p align="center", color='blue'>
+Figura 6
+</p>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Na função void verificarProntosRR(...), que será chamada na função rr(), verifica-se se os processos estão prontos para serem adicionados à fila, na qual ordena-se pela ordem de chegada. Os parâmetros passados por referência são relacionados à lista e à fila, com exeção do tempo atual. Enquanto a lista o tempo de chegada de um processo x for menor ou igual ao tempo atual transcorrido, ele é adicionado à fila e apagado da lista. Caso tal condição não seja atendida, sai-se do laço for, conforme é denotado na Figura 7. 
+
+~~~c+++
+// Função para verificar e mover processos prontos para a fila para o algoritmo Round-Robin (RR)
+void verificarProntosRR(vector<Processo> &lista, int tempoAtual, queue<Processo>&fila){
+    for(int i=0; i<(int)lista.size(); i++){
+        if(lista[i].tempoChegada <= tempoAtual){
+            fila.push(lista[i]); // Adiciona o processo à fila
+            lista.erase(lista.begin() + i); // Remove o processo da lista
+        } else {
+            break; // Interrompe o loop se os processos ainda não chegaram
+        }
+    }
+}
+~~~
+
+<p align="center", color='blue'>
+Figura 8
+</p>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Após ser executado o bloco de código idêntico ao SRT, referente à escolha do usuário, pede-se o quantum de processamento. Em seguida, ordena-se a lista em seguida, do mesmo modo que o SRT. Cria-se uma fila (queue) para armazenar os processos prontos, indo para o final da fila. Há um laço de repetição que roda enquanto a lista e a fila estiverem vazias. Nele move-se, os processos para a fila. Caso a fila não esteja vazia e o quantum inserido pelo usuário seja maior que o tempo de execução de um processo do início da fila, o tempo de execução temporário do processo atual recebe tal processo da fila. E, enquanto o tempo de execução temporário não for percorrido por completo, imprime-se a fila de processos prontos. Decrementa-se o tempo de execução do processo atual e incrementa o tempo atual. Por fim, move-se novos processos prontos para a fila e apaga-se o processo da fila.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caso o quantum seja menor que o processo total de execução atual da fila, transcorre-se o processo atual enquanto for menor que o quantum, imprimindo-o. E decrementa-se o tempo de execução do processo da fila e aumenta-se o tempo atual transcorrido. Novamente, verifica-se os processos prontos, movendo-os para a fila. coloca-se o processo de volta para a fila e remove-se o processo da fila. E, se a lista ou a fila não estiverem vazias, aumenta-se o tempo atual.
 
 ~~~c++ 
     int quantum; // Tempo fixo de execução para cada processo
@@ -244,7 +286,8 @@ Figura 5
 }
 ~~~
 
-Métodos
+## Métodos de validação
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para validarmos a lógica dos escalonadores SRT RR, utilizamos de vídeos explicativos situados no YouTube. Logo abaixo
 
 
