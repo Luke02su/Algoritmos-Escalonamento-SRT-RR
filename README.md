@@ -1,4 +1,15 @@
 # Relatório: Algoritmos de Escalonamento (SRT e RR)
+
+##### Integrantes: 
++ [Lucas Samuel Dias](https://github.com/luke02su)
++ Andreia Pereira de Carvalho()
++ [Nathália Beatriz Leonel Santos](https://github.com/nathaliabeatriz)
+
+##### Curso: 
++ ADS - Análise e Desenvolvimento de Sistemas
+
+##### Professor: 
++ [Gilberto Viana de Oliveira](https://github.com/gvoliveira)
   
 ## Descrição do projeto
 
@@ -7,17 +18,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os algoritmos a serem desenvolvidos irão simular os escalonadores SRT e RR, sendo que as entradas serão manuais no início do programa, conforme orientação prévia.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A linguagem de programação escolhida para o desenvolvimento do presente projeto é C++, na qual utilizamos struct, array, lista, fila, dentre outros conceitos correlacionados. Há outros métodos mais simples e mais complexos que os demonstrados aqui.
 </p>
-
-##### Integrantes: 
-+ [Lucas Samuel Dias](https://github.com/luke02su)
-+ Andreia
-+ [Nathália Beatriz](https://github.com/nathaliabeatriz)
-
-##### Curso: 
-+ ADS - Análise e Desenvolvimento de Sistemas
-
-##### Professor: 
-+ [Gilberto Viana de Oliveira](https://github.com/gvoliveira)
 
 ## Estrutura compartilhada entre SRT e RR
 
@@ -307,4 +307,7 @@ Figura 8
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desse modo, utilizamos três testes, os quais estão presentes nesses vídeos. O primeiro corroborou com a funcionalidade do SRT, já o segundo houve uma certa mudança de posição (embora pensamos que possa ser devido ao início do tempo atual, 0 ou 1, ou seja, sendo uma questão interpretativa) e o terceiro validou o RR.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logo abaixo há as Figuras 9, 10 e 11 exemplos que foram utilizados para aferir os algoritmos de escalonamento.
 </p>
+
+![Captura de tela 2024-08-04 095901](https://github.com/user-attachments/assets/b0fa0af3-15b2-4c5a-912c-95f1b928be14)
+
 
