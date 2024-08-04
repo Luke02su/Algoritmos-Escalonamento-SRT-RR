@@ -319,7 +319,7 @@ Figura 8
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Captura de tela 2024-08-04 103857](https://github.com/user-attachments/assets/adaf1e29-4319-479f-8363-d63fe1ead8f7)
 
 <p align="center", color='blue'>
-[Vídeo demonstrando o procedimento da Figura 10 que não passou no teste de mesa RR](https://www.youtube.com/watch?v=aWlQYllBZDs&t=185s)
+  <a href="https://www.youtube.com/watch?v=aWlQYllBZDs&t=185s">Vídeo demonstrando o procedimento da Figura 10 que não passou no teste de mesa RR</a>
 </p>
 <br>
 
