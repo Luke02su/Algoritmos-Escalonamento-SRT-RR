@@ -248,11 +248,6 @@ Figura 7
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caso o quantum seja menor que o processo total de execução atual da fila, transcorre-se o processo atual enquanto for menor que o quantum, imprimindo-o. E decrementa-se o tempo de execução do processo da fila e aumenta-se o tempo atual transcorrido. Novamente, verifica-se os processos prontos, movendo-os para a fila. coloca-se o processo de volta para a fila e remove-se o processo da fila. E, se a lista ou a fila não estiverem vazias, aumenta-se o tempo atual, conforme é situado na Figura 8.
 </p>
 
-<p align="center", color='blue'>
-Figura 8
-</p>
-<br>
-
 ~~~c++ 
     int quantum; // Tempo fixo de execução para cada processo
     cout << "Digite o quantum de processamento:\n";
@@ -309,7 +304,6 @@ Figura 8
 </p>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Captura de tela 2024-08-04 103326](https://github.com/user-attachments/assets/5a257ebe-714e-4744-af07-74bfa9cd2a3e)
-
 
 <p align="center", color='blue'>
 <a href="https://www.youtube.com/watch?v=TnxgA1tF-CU&t=441s">Vídeo demonstrando o procedimento da Figura 9 -- passou no teste de mesa do RR</a>
