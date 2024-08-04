@@ -1,8 +1,8 @@
 # Relatório: Algoritmos de Escalonamento (SRT e RR)
 
 ##### Integrantes: 
-+ [Lucas Samuel Dias](https://github.com/luke02su)
 + Andreia Pereira de Carvalho()
++ [Lucas Samuel Dias](https://github.com/luke02su)
 + [Nathália Beatriz Leonel Santos](https://github.com/nathaliabeatriz)
 
 ##### Curso: 
