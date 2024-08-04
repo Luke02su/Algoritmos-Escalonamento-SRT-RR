@@ -1,4 +1,12 @@
 # Relatório: Algoritmos de Escalonamento (SRT e RR)
+  
+## Descrição do projeto
+
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O trabalho consiste em aplicar os algoritmos de escalonamento mostrados em sala de aula, criando uma espécie de simulação de uso destes algoritmos: Shortest Remaining Time First (SRT) e Round-Robin (RR). Para isso, os alunos deverão se organizar em grupos e atender aos requisitos de execução e à apresentação solicitados pelo professor.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os algoritmos a serem desenvolvidos irão simular os escalonadores SRT e RR, sendo que as entradas serão manuais no início do programa, conforme orientação prévia.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A linguagem de programação escolhida para o desenvolvimento do presente projeto é C++, na qual utilizamos struct, array, lista, fila, dentre outros conceitos correlacionados. Há outros métodos mais simples e mais complexos que os demonstrados aqui.
+</p>
 
 ##### Integrantes: 
 + [Lucas Samuel Dias](https://github.com/luke02su)
@@ -10,14 +18,6 @@
 
 ##### Professor: 
 + [Gilberto Viana de Oliveira](https://github.com/gvoliveira)
-  
-## Descrição do projeto
-
-<p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O trabalho consiste em aplicar os algoritmos de escalonamento mostrados em sala de aula, criando uma espécie de simulação de uso destes algoritmos: Shortest Remaining Time First (SRT) e Round-Robin (RR). Para isso, os alunos deverão se organizar em grupos e atender aos requisitos de execução e à apresentação solicitados pelo professor.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os algoritmos a serem desenvolvidos irão simular os escalonadores SRT e RR, sendo que as entradas serão manuais no início do programa, conforme orientação prévia.<br>
-A linguagem de programação escolhida para o desenvolvimento do presente projeto é C++, na qual utilizamos struct, array, lista, fila, dentre outros conceitos correlacionados.
-</p>
 
 ## Estrutura compartilhada entre SRT e RR
 
