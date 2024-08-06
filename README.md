@@ -306,7 +306,7 @@ Figura 8
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Captura de tela 2024-08-04 103326](https://github.com/user-attachments/assets/5a257ebe-714e-4744-af07-74bfa9cd2a3e)
 
 <p align="center", color='blue'>
-<a href="https://www.youtube.com/watch?v=TnxgA1tF-CU&t=441s">Vídeo demonstrando o procedimento da Figura 9 -- passou no teste de mesa do RR</a>
+<a href="https://www.youtube.com/watch?v=TnxgA1tF-CU&t=441s">Vídeo demonstrando o procedimento da Figura 9 -- passou no teste de mesa do SRT</a>
 </p>
 <br>
 
