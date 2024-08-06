@@ -200,6 +200,8 @@ Figura 5
 </p>
 <br>
 
+## Estrutura exclusiva do RR
+
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Na função booleana ordenarRR(Processo a, Processo b), passa-se os parâmetros do tempo de chamada do primeiro processo e o do seguinte. Há uma condição na qual compara-se o tempo de chegada do processo a com o processo b. Caso seja igual, retorna-se o processo que teve o primeiro nome inserido, ou seja, o a. Caso contrário, retorna-se o processo que possui o menor tempo de chegada, ou seja, o a.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A dinâmica desse bloco de código possui uma estrutura semelhante ao do SRT entretanto, é mais simples, pois considera apenas o tempo de chegada, não levando em conta o tempo de execução, conforme é ilustrado na Figura 6.
