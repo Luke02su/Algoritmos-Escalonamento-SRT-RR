@@ -13,7 +13,7 @@ struct Processo {
         cin >> nome; // Lê o nome do processo
         cout << "Tempo de chegada: ";
         cin >> tempoChegada; // Lê o tempo de chegada do processo
-        cout << "Tempo de execução: ";
+        cout << "Tempo de execucao: ";
         cin >> tempoExecucao; // Lê o tempo de execução do processo
     }
 };
@@ -46,8 +46,8 @@ void srt() {
 
     // Loop para adicionar processos
     while (true) {
-        cout << "\nVocê deseja adicionar um processo?\n";
-        cout << "1 - Sim\n2 - Não\n\n";
+        cout << "\nVoce deseja adicionar um processo?\n";
+        cout << "1 - Sim\n2 - Nao\n\n";
         cout << "Escolha: ";
         cin >> resp; // Lê a escolha do usuário
         if (resp == 1) {
@@ -84,10 +84,8 @@ void srt() {
         // Executa o processo selecionado
         if (posAtual >= 0) {
             lista[posAtual].tempoExecucao--; // Decrementa o tempo de execução restante do processo
-            cout << "\nProcesso: " << lista[posAtual].nome << ". Tempo: " << tempoAtual << ".";
+            cout << "Tempo: " << tempoAtual <<  " - Executou processo " << lista[posAtual].nome << " (TR = " <<  lista[posAtual].tempoExecucao << ").\n";
             if (lista[posAtual].tempoExecucao == 0) {
-                // Se o tempo de execução do processo chegar a zero, o processo terminou
-                cout << "\nProcesso " << lista[posAtual].nome << " terminou no tempo " << tempoAtual << ".";
                 lista.erase(lista.begin() + posAtual); // Remove o processo da lista
             }
         }
@@ -116,8 +114,8 @@ void rr() {
 
     // Loop para adicionar processos
     while (true) {
-        cout << "\nVocê deseja adicionar um processo?\n";
-        cout << "1 - Sim\n2 - Não\n\n";
+        cout << "\nVoce deseja adicionar um processo?\n";
+        cout << "1 - Sim\n2 - Nao\n\n";
         cout << "Escolha: ";
         cin >> resp; // Lê a escolha do usuário
         if (resp == 1) {
@@ -145,20 +143,20 @@ void rr() {
             if(quantum > fila.front().tempoExecucao){
                 int tempExec = fila.front().tempoExecucao;
                 for(int i=0; i<tempExec; i++){
-                    cout << "Processo " << fila.front().nome << ". Tempo: " << tempoAtual << ".\n";
                     fila.front().tempoExecucao--;
+                    cout << "Tempo: " << tempoAtual <<  " - Executou processo " << fila.front().nome << " (TR = " <<  fila.front().tempoExecucao << ").\n";
+                    verificarProntosRR(lista, tempoAtual, fila);
                     tempoAtual++;
                 }
-                verificarProntosRR(lista, tempoAtual, fila);
                 fila.pop();
 
             } else {
                 for(int i=0; i<quantum; i++){
-                    cout << "Processo " << fila.front().nome << ". Tempo: " << tempoAtual << ".\n";
-                    fila.front().tempoExecucao--;
+                    fila.front().tempoExecucao--; 
+                    cout << "Tempo: " << tempoAtual <<  " - Executou processo " << fila.front().nome << " (TR = " <<  fila.front().tempoExecucao << ").\n";
+                    verificarProntosRR(lista, tempoAtual, fila);
                     tempoAtual++;
                 }
-                verificarProntosRR(lista, tempoAtual, fila);
                 fila.push(fila.front());
                 fila.pop();
             }
@@ -193,7 +191,7 @@ int main() {
                 cout << "Programa de escalonamento fechado." << endl; // Mensagem de saída
                 break;
             default:
-                cout << "Opção inválida. Tente novamente." << endl; // Mensagem para opções inválidas
+                cout << "Opcao invalida. Tente novamente." << endl; // Mensagem para opções inválidas
                 break;
         }
     } while (opcao != 3); // Continua até o usuário escolher sair
